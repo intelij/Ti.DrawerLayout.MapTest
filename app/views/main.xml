@@ -1,0 +1,13 @@
+<Alloy>
+    <View>
+        
+        <!--
+        <View id="fakeMapView" backgroundColor="grey"/>
+        -->
+        
+        <!-- 
+        
+        -->
+        <View id="mapView" ns="Alloy.Globals.Map" />
+    </View>
+</Alloy>
