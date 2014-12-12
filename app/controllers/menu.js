@@ -23,9 +23,6 @@ var selected;
 function onSelect(e) {
   if (e.row !== selected) {
     selectRow(e.row);
-    _.defer(function() {
-      Alloy.Globals.drawer.toggleLeftWindow();
-    });
   }
 }
 
@@ -41,11 +38,6 @@ function selectRow(_row) {
   selected = _row;
   selected.setActive(true);
 
-  _.defer(function() {
-    Alloy.Globals.open(Alloy.createController(_row.controller, {
-      parent : args.parent
-    }));
-  });
 }
 
 /**
